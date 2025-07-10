@@ -78,7 +78,7 @@ const Hero = () => {
         <div className="mb-16 space-y-6 animate-fade-in delay-700">
           <div className="space-y-2">
             <h2 className="text-2xl md:text-3xl text-orange-400 font-light tracking-wider">HELLO THERE</h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-white">I'M NISHANTHA KUMARA</h3>
+            <h3 className="text-3xl md:text-4xl font-bold text-white">I'M PRABHATH NISHANTHA</h3>
           </div>
           
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
