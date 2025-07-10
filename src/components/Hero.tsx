@@ -1,16 +1,15 @@
 import { ArrowDown, Code, Brain, Palette, Sparkles, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
   const scrollToAbout = () => {
     const element = document.getElementById('about');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Enhanced Background with Multiple Layers */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
       
@@ -44,11 +43,7 @@ const Hero = () => {
             {/* Profile Picture with Modern Border */}
             <div className="w-full h-full rounded-full bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 p-1 shadow-2xl">
               <div className="w-full h-full rounded-full overflow-hidden shadow-inner">
-                <img 
-                  src="https://i.postimg.cc/9Q8g3ZFg/mine.jpg" 
-                  alt="Nishantha Kumara Profile"
-                  className="w-full h-full object-cover"
-                />
+                <img src="https://i.postimg.cc/9Q8g3ZFg/mine.jpg" alt="Nishantha Kumara Profile" className="w-full h-full object-cover" />
               </div>
             </div>
             
@@ -71,9 +66,7 @@ const Hero = () => {
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 leading-none tracking-tight">
             <span className="block text-white/90 animate-fade-in">I'M AN</span>
             <span className="block">
-              <span className="bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent animate-fade-in delay-300">
-                AI/UX
-              </span>
+              <span className="bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent animate-fade-in delay-300">GRAPHIC</span>
             </span>
             <span className="block bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent animate-fade-in delay-500">
               DESIGNER
@@ -97,12 +90,19 @@ const Hero = () => {
         {/* Enhanced Skills Section */}
         <div className="mb-16 animate-fade-in delay-1000">
           <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-            {[
-              { icon: Brain, label: "AI Engineering", desc: "Machine Learning & Neural Networks" },
-              { icon: Palette, label: "Graphic Design", desc: "Creative Visual Solutions" },
-              { icon: Code, label: "Development", desc: "Full-Stack Web Applications" }
-            ].map((skill, index) => (
-              <div key={skill.label} className={`group text-center animate-fade-in delay-${1200 + index * 200}`}>
+            {[{
+            icon: Brain,
+            label: "AI Engineering",
+            desc: "Machine Learning & Neural Networks"
+          }, {
+            icon: Palette,
+            label: "Graphic Design",
+            desc: "Creative Visual Solutions"
+          }, {
+            icon: Code,
+            label: "Development",
+            desc: "Full-Stack Web Applications"
+          }].map((skill, index) => <div key={skill.label} className={`group text-center animate-fade-in delay-${1200 + index * 200}`}>
                 <div className="relative mb-4">
                   <div className="w-20 h-20 mx-auto bg-gradient-to-br from-orange-500/20 to-orange-600/30 backdrop-blur-sm border border-orange-500/30 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
                     <skill.icon className="w-10 h-10 text-orange-400 group-hover:text-orange-300 transition-colors" />
@@ -116,18 +116,13 @@ const Hero = () => {
                 <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">
                   {skill.desc}
                 </p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
         
         {/* Enhanced CTA Section */}
         <div className="space-y-6 animate-fade-in delay-1500">
-          <Button
-            onClick={scrollToAbout}
-            size="lg"
-            className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-12 py-6 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl border-0"
-          >
+          <Button onClick={scrollToAbout} size="lg" className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-12 py-6 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl border-0">
             <span className="mr-3">Explore My Work</span>
             <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
           </Button>
@@ -144,8 +139,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
