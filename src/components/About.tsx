@@ -13,14 +13,14 @@ const About = () => {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Image Placeholder */}
+          {/* Left Column - Profile Image */}
           <div className="relative">
-            <div className="w-full h-96 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl flex items-center justify-center shadow-2xl">
-              <div className="text-center">
-                <User className="w-24 h-24 text-orange-500 mx-auto mb-4" />
-                <p className="text-gray-400">Professional Photo</p>
-                <p className="text-sm text-gray-500">To be added</p>
-              </div>
+            <div className="w-full h-96 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="https://i.postimg.cc/9Q8g3ZFg/mine.jpg" 
+                alt="Nishantha Kumara - Professional Photo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl"></div>
           </div>
