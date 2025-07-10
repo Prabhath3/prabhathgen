@@ -41,11 +41,7 @@ const Hero = () => {
         <div className="mb-12 animate-fade-in">
           <div className="relative w-40 h-40 mx-auto mb-8">
             {/* Profile Picture with Modern Border */}
-            <div className="w-full h-full rounded-full bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 p-1 shadow-2xl">
-              <div className="w-full h-full rounded-full overflow-hidden shadow-inner">
-                <img src="https://i.postimg.cc/9Q8g3ZFg/mine.jpg" alt="Nishantha Kumara Profile" className="w-full h-full object-cover" />
-              </div>
-            </div>
+            
             
             {/* Floating Elements */}
             <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center animate-bounce delay-500">
@@ -55,10 +51,7 @@ const Hero = () => {
           </div>
           
           {/* Status Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full text-green-400 text-sm font-medium mb-6">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            Available for opportunities
-          </div>
+          
         </div>
         
         {/* Enhanced Typography */}
