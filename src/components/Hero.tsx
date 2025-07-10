@@ -1,4 +1,3 @@
-
 import { ArrowDown, Code, Brain, Palette, Sparkles, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -44,8 +43,12 @@ const Hero = () => {
           <div className="relative w-40 h-40 mx-auto mb-8">
             {/* Profile Picture with Modern Border */}
             <div className="w-full h-full rounded-full bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 p-1 shadow-2xl">
-              <div className="w-full h-full rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center shadow-inner">
-                <span className="text-5xl font-bold text-white">NK</span>
+              <div className="w-full h-full rounded-full overflow-hidden shadow-inner">
+                <img 
+                  src="https://i.postimg.cc/9Q8g3ZFg/mine.jpg" 
+                  alt="Nishantha Kumara Profile"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             
